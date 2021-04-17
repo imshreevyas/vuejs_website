@@ -1,6 +1,6 @@
 # firstapp
 
-> Hello i am Shree Vyas
+> Hello This is my first Vuejs project 
 
 ## Commands
 

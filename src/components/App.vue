@@ -7,7 +7,10 @@
         alt="vue"
         class="logo"
       />
-      <h1>Welcome to Vue.js</h1>
+      <h1>{{ name }}</h1>
+      <h2>{{ name }}</h2>
+      <hello />
+      <button @click="something">OK</button>
     </div>
     <div class="bottom">
       To get started, edit <code>./src/components/App.vue</code> and save to reload.<br/>
@@ -19,8 +22,22 @@
 </template>
 
 <script>
+import Hello from './Hello'
   export default {
-    name: 'app'
+    name: 'app',
+    components: {
+      Hello
+    },
+    data() {
+      return {
+        name: 'Shree'
+      }
+    },
+    methods: {
+        something() {
+          this.name = 'Nabeel'
+      }
+    }
   }
 </script>
 
